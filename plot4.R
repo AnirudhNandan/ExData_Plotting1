@@ -49,7 +49,8 @@ library(sqldf)
 
 elecpow <- read.csv2.sql(file = "./elecpow/household_power_consumption.txt",
                          sql = sqll, colClasses = c("character","character","numeric","numeric","numeric","numeric",
-                                                    "numeric","numeric","numeric"))
+            
+                                                                                            "numeric","numeric","numeric"))
 closeAllConnections()
 
 ## creates a new column for dates with time
